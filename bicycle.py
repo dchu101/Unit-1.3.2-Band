@@ -1,29 +1,23 @@
 class Bicycle(object):
-    def __init__(self,nbikeame):
-        self.bikename = bikename
-      
-    def __init__(self,weight):
+    def __init__(self, model, weight, cost):
+        self.model = model
         self.weight = weight
-      
-    def __init__(self, cost):
         self.cost = cost
 
-class BikeShops(object):
-    def __init__(self,shopname):
-        self.shopname = shopname
+class BikeShops(object):        
+    def __init__(self, shop, inventory, margin, profit):
         
-    def __init__(self,inventory):
+        self.shop = shop
+        self.inventory = {}
+        self.margin = margin
         
-#Have an inventory of different bicycles
-#Sell bicycles with a margin over their cost
-#Can see how much profit they have made from selling bikes
+        self.profit = 0
 
 class Customers(object):
-    def __init__(self,custname):
+    def __init__(self,customer, funds, bikeowned):
         self.custname = custname
-    
-    def __init__(self,funds):
         self.funds = funds
+        self.bikeowned = None
         
     # Can buy and own a new bicycle
 
